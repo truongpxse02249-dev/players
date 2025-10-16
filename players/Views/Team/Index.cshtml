@@ -1,0 +1,49 @@
+﻿@model List<PlayerLevel>
+
+@{
+    ViewBag.Title = "Chia đội bóng";
+}
+
+<h2>Danh sách cầu thủ theo level</h2>
+
+<form asp-action="RandomizeTeams" method="post">
+    <table border="1" cellpadding="5" style="border-collapse:collapse;">
+        <tr>
+            <th>Level</th>
+            <th>Cầu thủ 1</th>
+            <th>Cầu thủ 2</th>
+        </tr>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>@Model[i].Id</td>
+                <td><input type="text" name="[@i].Player1" value="@Model[i].Player1" /></td>
+                <td><input type="text" name="[@i].Player2" value="@Model[i].Player2" /></td>
+                <input type="hidden" name="[@i].Id" value="@Model[i].Id" />
+            </tr>
+        }
+    </table>
+
+    <br />
+    <button type="submit">Chia random đội</button>
+</form>
+
+@if (ViewBag.Team1 != null)
+{
+    <hr />
+    <h3>🏆 Đội 1</h3>
+    <ul>
+        @foreach (var player in ViewBag.Team1)
+        {
+            <li>@player</li>
+        }
+    </ul>
+
+    <h3>⚽ Đội 2</h3>
+    <ul>
+        @foreach (var player in ViewBag.Team2)
+        {
+            <li>@player</li>
+        }
+    </ul>
+}
