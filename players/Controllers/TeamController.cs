@@ -14,8 +14,8 @@ namespace players.Controllers
             {
                 new() { Id = 1, Player1 = "A Thành", Player2 = "A Trung" },
                 new() { Id = 2, Player1 = "SaoNM", Player2 = "SơnTH/Quân" },
-                new() { Id = 3, Player1 = "Luân", Player2 = "A Việt" },
-                new() { Id = 4, Player1 = "A Dũng (Việt Software)", Player2 = "A Hà / A Liêm" },
+                new() { Id = 3, Player1 = "Luân", Player2 = "Việt" },
+                new() { Id = 4, Player1 = "A Dũng (VietSoftware)", Player2 = "A Hà / A Liêm" },
                 new() { Id = 5, Player1 = "Công", Player2 = "Quyến" },
                 new() { Id = 6, Player1 = "Hoàng", Player2 = "Hinh" },
                 new() { Id = 7, Player1 = "A Dũng Đăng", Player2 = "Dương / Long" },
