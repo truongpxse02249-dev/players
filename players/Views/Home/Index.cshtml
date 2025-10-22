@@ -60,7 +60,7 @@
 <h2 style="text-align:center; margin-bottom:20px;">⚽ Random Team Generator</h2>
 
 <div class="container-flex">
-    <!-- Bảng nhập -->
+
     <div>
         <form method="post" asp-action="RandomizeTeams" id="teamForm">
             <table>
@@ -92,7 +92,6 @@
         </form>
     </div>
 
-    <!-- Kết quả random -->
     <div id="resultSection" class="result-box">
         @if (ViewBag.Team1 != null)
         {

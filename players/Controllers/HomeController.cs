@@ -19,7 +19,7 @@ namespace players.Controllers
             {
                 new() { "A Thành", "A Trung" },
                 new() { "SaoNM", "SơnTH/Quân" },
-                new() { "Luân", "A Việt" },
+                new() { "Luân", "Việt" },
                 new() { "A Dũng (VietSoftware)", "A Hà / A Liêm" },
                 new() { "Công", "Quyến" },
                 new() { "Hoàng", "Hinh" },
